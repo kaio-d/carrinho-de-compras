@@ -10,7 +10,12 @@ async function deleteAllItens(userCart, name) {
   }
 }
 
-async function removeItem(userCart, index) {}
+async function removeItem(userCart, index) {
+  const deleteItem = index - 1;
+  if (index >= 0 && index < userCart.length) {
+    userCart.splice(deleteItem, 1);
+  }
+}
 
 async function calculateTotal(userCart) {
   console.log("\nCart Total is: ");

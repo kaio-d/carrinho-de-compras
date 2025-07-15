@@ -18,5 +18,7 @@ await cartService.addItem(myCart, item3);
 
 await cartService.calculateTotal(myCart);
 
+await cartService.removeItem(myCart, 1)
+
 console.log();
 await cartService.displayCart(myCart);
